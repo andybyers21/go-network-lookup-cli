@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Go Network Lookup CLI v0.01")
+	fmt.Println("Go Network Lookup CLI v0.01\n")
 
 	err := cli.NewApp().Run(os.Args)
 	if err != nil {
