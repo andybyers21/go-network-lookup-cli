@@ -64,7 +64,7 @@ func main() {
 		{
 			Name:  "cname",
 			Usage: "Looks up the CNAME for a particular host",
-			Flags: myFlags,
+			Flags: flags,
 			Action: func(c *cli.Context) error {
 				cname, err := net.LookupCNAME(c.String("host"))
 				if err != nil {
@@ -78,7 +78,7 @@ func main() {
 		{
 			Name:  "mx",
 			Usage: "Looks up the MX records for a particular host",
-			Flags: myFlags,
+			Flags: flags,
 			Action: func(c *cli.Context) error {
 				mx, err := net.LookupMX(c.String("host"))
 				if err != nil {
